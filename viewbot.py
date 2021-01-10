@@ -43,7 +43,7 @@ def search_and_click(ua,sleep_time,top5,proxy,proxies,sleep_after):
 	options1.add_argument("--no-sandbox")
 	#options1.add_argument('user-agent=%s'%ua.random)
 
-	driver = webdriver.Chrome(EXECUTABLE_PATH=os.eviron.get("CHROMEDRIVER_PATH"),options=options1)
+	driver = webdriver.Chrome(EXECUTABLE_PATH=os.environ.get("CHROMEDRIVER_PATH"),options=options1)
 	#options.add_experimental_option( "prefs",{'profile.managed_default_content_settings.javascript': 2})
 
 	
@@ -53,6 +53,7 @@ def search_and_click(ua,sleep_time,top5,proxy,proxies,sleep_after):
 		#driver.get('https://www.dailymotion.com/video/x7yfnh3')
 	try:  
 		driver.get('https://dai.ly/x7yfnh3')
+		print("Link Opened")
 		#time.sleep(3)
 		#mm = driver.find_element_by_class_name('top-matter')
 		#mm = driver.find_element_by_class_name('md')
