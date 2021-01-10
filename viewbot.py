@@ -43,7 +43,7 @@ def search_and_click(ua,sleep_time,top5,proxy,proxies,sleep_after):
 	options1.add_argument("--no-sandbox")
 	#options1.add_argument('user-agent=%s'%ua.random)
 
-	driver = webdriver.Chrome(EXECUTABLE_PATH=os.environ.get("CHROMEDRIVER_PATH"),options=options1)
+	driver = webdriver.Chrome(executable_path=os.environ.get("CHROMEDRIVER_PATH"),options=options1)
 	#options.add_experimental_option( "prefs",{'profile.managed_default_content_settings.javascript': 2})
 
 	
