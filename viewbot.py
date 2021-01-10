@@ -5,7 +5,7 @@ from bs4 import BeautifulSoup
 from fake_useragent import UserAgent
 from time import sleep
 import random
-
+import os
 
 def get_proxies(ua):
 	proxies = []
